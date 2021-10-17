@@ -1,9 +1,9 @@
 :root {
-    --banner_green: #CC8899;
-    --banner_pink: #03254c;
-    --hanbaiyu: #eff9f0;
-    --molihuang: #152c41;
-    --yalihuang: #bcccee;
+    --banner_green: #000000;
+    --banner_pink: #000000;
+    --hanbaiyu: #ffffff;
+    --molihuang: #000000;
+    --yalihuang: #ffffff;
   }
   
 html {
@@ -101,7 +101,6 @@ section {
 }
 
 .navbar .navbar-nav .nav-item a:hover {
-  background-image: url('assets/menu-cloud1.png'), url('assets/menu-cloud2.png');
   background-position: left top, right bottom;
   background-size: 30px, 30px;
   background-repeat: no-repeat, no-repeat;
@@ -124,15 +123,15 @@ section {
   font-size: 120%;
 }
 
-.jiashuzhang {
-  font-family: 'Big Shoulders Stencil Text';
-  font-size: calc(100% + 6vw + 6vh);
+.jizhang {
+  font-family: 'Architects Daughter';
+  font-size: calc(100% + 4vw + 4vh);
   color: var(--molihuang);
 }
 
 .my_work {
   color:var(--banner_pink); 
-  font-family: 'Big Shoulders Stencil Text';
+  font-family: 'Architects Daughter';
   letter-spacing: 1px;
   font-size: 50px;
   text-shadow: 1px 1px rgb(196, 196, 196);
@@ -140,7 +139,7 @@ section {
 
 .my_feature {
   color:var(--banner_green); 
-  font-family: 'Big Shoulders Stencil Text';
+  font-family: 'Architects Daughter';
   letter-spacing: 1px;
   font-size: 50px;
   text-shadow: 1px 1px rgb(114, 114, 114);

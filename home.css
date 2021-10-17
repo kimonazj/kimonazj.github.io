@@ -1,26 +1,15 @@
 @import url("main.css");
 
 .masthead {
-    height: 90vh;
-    min-height: 500px;
-    background-image: url('assets/background.png');
+    height: 140vh;
+    min-height: 300px;
+    background-image: url('assets/Ubackground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     position:relative;
   }
-
-.masthead_mobile {
-  height: 70vh;
-  min-height: 350px;
-  background-image: url('assets/home_mobile.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position:relative;
-  overflow: hidden;
-}
 
 .addon {
   height: 90vh;
@@ -91,9 +80,9 @@
   }
   
   .intro_text {
-    font-family: 'Allerta Stencil';
+    font-family: 'kalam';
     font-size: calc(50% + 1vw + 1vh);
-    color: white;
+    color: black;
     text-align: left;
   }
   
