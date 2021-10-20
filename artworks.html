@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H9HJCJNWB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3H9HJCJNWB', {'page_title' : 'Art Cells'});
+    </script>
+    <title>Ji Zhang Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/188a1ecbd0.js" crossorigin="anonymous" async></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="main.js" async></script>
+    <script src="feature.js" async></script>
+    <link rel="stylesheet" type="text/css" href="featured.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/Uicon.png"/>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    $(document).ready(function(){
+
+        //art Gallery
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+
+            if(value == "all") {
+                $('.filter').show('1000');}
+            else {
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');}
+        });
+
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+    });
+
+
+</script>
+
+<body>
+
+<!--Loading Page-->
+<div class="se-pre-con">
+    <div class="loader_image">
+        <img src="assets/Uicon.png">
+        <p>Loading ...</p>
+    </div>
+</div>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-sm sticky-top bg-custom">
+    <div class="container">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/Uicon.png" alt="logo" style="width:50px;">
+        </a>
+        <a class="navbar-brand jizhang" href="index.html" style="font-size: 24px; color: #000000;">Ji Zhang</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link active" href="artworks.html">Artistic Cells&nbsp;</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="codes.html">Coding Cells</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="morecells.html">Other Cells</a>
+                </li>
+                <span class="nav-indicator"></span>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- back to top button -->
+<button onclick="topFunction()" id="back_to_top" title="Go to top">Top</button>
+
+<!--art work gallery-->
+<main class="main-container photos-section">
+    <section class="photos">
+        <div class="page-title">
+            <img src="assets/Uartcell.png" alt="Artcell Icon">
+            <h2 style="color:black">My <span class="b-black">Artwork Gallery</span></h2>
+        </div>
+        <p class="section-description " style="color:black;font-size: 16px;
+    font-weight: 400;">
+            Here are some of my artworks that I have drawn over the years.<br>
+        </p>
+        <p class="section-description" style="color:black;font-size: 16px;
+    font-weight: 400;">
+            <em>“Your delightful drawings make us all gay, A famous artist you'll be someday” – Sendak,
+                Maurice</em><br>
+        </p>
+        <div class="row justify-content-center" style="margin-top: 50px">
+                <button class="col-md-auto btn btn-default filter-button" data-filter="all">All</button><br>
+                <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="paint">Painting</button><br>
+                <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="sketch">Sketches</button><br>
+                <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="object">Objects</button><br>
+                <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="other">Other</button>
+        </div>
+        <div class="photo-grid-container">
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/bythesea.png"
+                     class="lazy" alt="painting of seashore" title="seashore">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/sky1.png"
+                     class="lazy" alt="sky paint"
+                     title="sky">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/countryside.png"
+                     class="lazy" alt="countryside" title="contryside">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/dog.png"
+                     class="lazy" alt="doggie" title="doggie">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/fox.png"
+                     class="lazy" alt="fox riding a bike" title="children fox">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/longmao.png"
+                     class="lazy" alt="my neignbor totoro"
+                     title="Totoro 龙猫">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/catindoor.png"
+                     class="lazy" alt="cat in wardrobe" title="Cat in Wardrobe">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/sky2.png"
+                     class="lazy" alt="sky" title="sky">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/watchTV.png"
+                     class="lazy"
+                     alt="family watch TV"
+                     title="00s parenting">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/dancinggirl.png"
+                     class="lazy" alt="dance girl"
+                     title="by the window">
+            </div>
+            <div class="photo-container filter paint">
+                <img src="assets/artwork/girlumb.png"
+                     class="lazy" alt="girl with umbrella"
+                     title="almost rain">
+            </div>
+            <div class="photo-container filter sketch">
+                <img src="assets/artwork/handske.png"
+                     class="lazy" alt="hand sketch"
+                     title="20 min sketch">
+            </div>
+            <div class="photo-container filter sketch">
+                <img src="assets/artwork/monsters.png"
+                     class="lazy" alt="monster"
+                     title="monster sketch">
+            </div>
+            <div class="photo-container filter sketch">
+                <img src="assets/artwork/sketch.png"
+                     class="lazy"
+                     alt="sketch"
+                     title="girl with flower">
+            </div>
+            <div class="photo-container filter sketch">
+                <img src="assets/artwork/tower.png"
+                     class="lazy" alt="Tower" title="Tower">
+            </div>
+            <div class="photo-container filter object">
+                <img src="assets/artwork/object1.png"
+                     class="lazy" alt="Object1"
+                     title="Object1">
+            </div>
+            <div class="photo-container filter object">
+                <img src="assets/artwork/object2.png"
+                     class="lazy" alt="Object2" title="Object2">
+            </div>
+            <div class="photo-container filter object">
+                <img src="assets/artwork/object3.png"
+                     class="lazy" alt="Object3" title="Object3">
+            </div>
+            <div class="photo-container filter object">
+                <img src="assets/artwork/object4.png"
+                     class="lazy" alt="Object4"
+                     title="Object4">
+            </div>
+            <div class="photo-container filter other">
+                <img src="assets/artwork/collage.png"
+                     class="lazy" alt="Collage"
+                     title="Design principle collage">
+            </div>
+            <div class="photo-container filter other">
+                <img src="assets/artwork/carrot.gif"
+                     class="lazy" alt="carrot gif" title="Six packs Carrot">
+            </div>
+            <div class="photo-container filter other">
+                <img src="assets/artwork/peachandgirl.png"
+                     class="lazy" alt="girl"
+                     title="The inner world of Sherry">
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+<footer class="py-3 bg-dark text-white-50">
+    <div class="container text-center">
+        <small>Copyright &copy; 2021 Ji Zhang All Right Reserved</small>
+    </div>
+</footer>
+
+</body>
+</html>
