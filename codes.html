@@ -21,6 +21,7 @@
     <script src="https://kit.fontawesome.com/188a1ecbd0.js" crossorigin="anonymous" async></script>
     <script src="main.js" async></script>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="codes.css">
     <!--    the icon on the top-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/Uicon.png"/>
     <!-- Google font -->
@@ -65,7 +66,7 @@
         <a class="navbar-brand" href="index.html">
             <img src="assets/Uicon.png" alt="logo" style="width:50px;">
         </a>
-        <a class="navbar-brand jizhang" href="index.html" style="font-size: 24px; color: #000000;">JZ</a>
+        <a class="navbar-brand jizhang" href="index.html" style="font-size: 24px; color: #000000;">Ji Zhang</a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -79,13 +80,13 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item ml-2">
-                    <a class="nav-link" href="featured.html"><i class="fas fa-star"></i>&nbsp;Artistic Cells&nbsp;<i class="fas fa-star"></i></a>
+                    <a class="nav-link" href="artworks.html">&nbsp;Artistic Cells&nbsp;</a>
                 </li>
                 <li class="nav-item ml-2">
-                    <a class="nav-link active" href="analytics.html">Coding Cells</a>
+                    <a class="nav-link active" href="codes.html">Coding Cells</a>
                 </li>
                 <li class="nav-item ml-2">
-                    <a class="nav-link" href="techmarket.html">Other Cells</a>
+                    <a class="nav-link" href="morecells.html">Other Cells</a>
                 </li>
                 <span class="nav-indicator"></span>
             </ul>
@@ -93,98 +94,372 @@
     </div>
 </nav>
 
-<header class="back_area">
-    <div class="container pt-3">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6 text-right">
-                <img width="60%" src="assets/work2.png">
-            </div>
-            <div class="col-md-6">
-                <h1 class="my_feature">Business Analytics</h1>
-                <h4 class="mt-4"><span class="data_slogan">// Data does not talk, but we do //</span></h4>
-            </div>
-        </div>
-    </div>
-</header>
 
 <!-- back to top button -->
 <button onclick="topFunction()" id="back_to_top" title="Go to top">Top</button>
 
 <!-- Page Content -->
-<section class="py-5">
-    <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6 text-center pr-5">
-                <img width="60%" src="assets/projects/ZYelp.png">
+<main class="main-container project-section">
+    <section class="projects">
+        <div class="page-title">
+            <img src="assets/Ucodecell.png" alt="Codecell Icon">
+            <h2 style="color:black">My <span class="b-black">Coding Project</span></h2>
+        </div>
+        <p class="section-description" style="color:black;font-size: 16px;
+    font-weight: 400;">
+            Here are the projects I have worked on.<br>
+            Also take a look at my <a class="hyperlink"
+                                      href="https://github.com/kimonazj">GitHub</a> profile for more details.
+        </p>
+        <p class="section-description" style="color:black;font-size: 16px;
+    font-weight: 400;">
+            <em>"Code is like humor. When you have to explain it, it's bad."</em><br>
+        </p>
+        <div class="project-cards-container">
+            <div class="card">
+                <img src="./img/project-preview/subuwu-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Subuwu
+                                </span>
+                        <div class="project-links">
+                            <a href="https://subuwu.anniew.xyz/">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/subuwu">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>ReactJS</span>
+                        <span>Redux</span>
+                        <span>Styled-Components</span>
+                    </div>
+                    <p class="project-description">
+                        This is a responsive Tesla website clone customized for Subuwu
+                        &#40;Subaru but its uwu&#41;.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6 text-left">
-                <h3><b>Yelp User Segmentation</b></h3>
-                <hr class="title_line">
-                <p class="mb-2"><b>Objective:</b> Segment Yelp users in Phoenix, AZ and recommend corresponding advertisement strategies.</p>
-                <p class="mb-2"><b>Tech Tool & Method:</b> R Studio, K-means clustering</p>
-                <p><b>Highlights:</b>
-                <ul>
-                    <li>Detected and removed data outliers</li>
-                    <li>Identified 4 user groups and pinpointed key target group</li>
-                    <li>Recommended target advertisement strategies</li>
-                </ul>
-                </p>
+            <div class="card">
+                <img src="./img/project-preview/comfy-coffee-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Comfy Coffee
+                                </span>
+                        <div class="project-links">
+                            <a href="https://comfy-coffee.anniew.xyz/">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/comfy-coffee">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                    <p class="project-description">
+                        This is the landing page for a fictitious coffee shop called "Comfy
+                        Coffee" based on Starbucks'
+                        website design.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/project-preview/twitcord-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Twitcord
+                                </span>
+                        <div class="project-links">
+                            <a href="https://twitcord.anniew.xyz/">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/twitcord">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <p class="project-description">
+                        A mobile UI concept of "If Twitter was owned by Discord." It was
+                        inspired by this <a
+                            href="https://www.reddit.com/r/discordapp/comments/lxjoe1/if_twitter_were_owned_by_discord/"
+                            class="hyperlink">concept art</a> on Reddit. You can
+                        change the nav tabs and toggle on the reaction buttons.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/project-preview/tic-tac-toe-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Simple TIC-TAC-TOE Game
+                                </span>
+                        <div class="project-links">
+                            <a href="https://tic-tac-toe.anniew.xyz/">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/tic-tac-toe">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <p class="project-description">
+                        This is a fully responsive simple tic-tac-toe game written in
+                        vanilla HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/project-preview/ig-bot-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Instagram Like & Comment Bot
+                                </span>
+                        <div class="project-links">
+                            <a href="https://www.instagram.com/anniedotexe/">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a
+                                    href="https://github.com/anniedotexe/Instagram-Like-Comment-Bot">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>Python</span>
+                        <span>Selenium</span>
+                    </div>
+                    <p class="project-description">
+                        An Instagram bot script written in Python using <a class="hyperlink"
+                                                                           href="https://selenium-python.readthedocs.io/">Selenium</a> on
+                        Google Chrome. It will go through posts in hashtag(s) and like
+                        and/or comment on them.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/project-preview/twitter-bot-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Twitter Like & Retweet Bot
+                                </span>
+                        <div class="project-links">
+                            <a href="https://twitter.com/ac_celeste_bot">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/Twitter-Retweet-Bot">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>Python</span>
+                        <span>AWS EC2</span>
+                    </div>
+                    <p class="project-description">
+                        A Twitter bot written in Python using <a class="hyperlink"
+                                                                 href="https://docs.tweepy.org/en/stable/getting_started.html">Tweepy</a>.
+                        It will like and/or retweet tweets that contain single or multiple
+                        keywords and hashtags.<br><br>
+                        My version of this Twitter bot likes and retweets anything
+                        containing the words "Animal Crossing Celeste".<em>
+                        I did not realize that there is also a game called Celeste, so
+                        the bot also retweets any tweets talking about both of these
+                        games and tweets about Animal Crossing from Twitter usernames
+                        with Celeste in it. </em> It was originally deployed on an
+                        Amazon Web Services EC2 instance. However, the free trial period
+                        ended, so it is now hosted for free on <a class="hyperlink"
+                                                                  href="https://www.pythonanywhere.com/">PythonAnywhere</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/project-preview/rnn-twitter-bot-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    RNN Twitter Bot
+                                </span>
+                        <div class="project-links">
+                            <a href="https://twitter.com/dickinson_rnn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/RNN-Twitter-Bot">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>Python</span>
+                        <span>GCP VM</span>
+                    </div>
+                    <p class="project-description">
+                        This is a recurrent neural network Twitter bot written in Python
+                        with Tweepy. It will tweet newly generated text from the trained
+                        model every hour to a Twitter account<br><br>
+                        My version of this Twitter bot was trained to generate text with
+                        Emily Dickinson
+                        poems. It was originally deployed on a Google
+                        Cloud Platform virtual machine
+                        instance. However, the free
+                        trial period ended, so it is now scheduled to run locally on PC
+                        startup.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/project-preview/amazon2-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Amazon 2.0
+                                </span>
+                        <div class="project-links">
+                            <a href="https://clone-2-2ee81.firebaseapp.com">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/amazon-2">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>Tailwind CSS</span>
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                        <span>Firestore Database</span>
+                    </div>
+                    <p class="project-description">
+                        A redesigned Amazon clone inspired by this <a class="hyperlink"
+                                                                      href="https://dribbble.com/shots/15350650-Amazon-Website-Redesign-Concept">concept
+                        design</a> on Dribbble. You can add items to cart, delete items
+                        from the cart, and increase or decrease the quantity of an item in
+                        the cart.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/project-preview/anniewxyz-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    anniew.xyz
+                                </span>
+                        <div class="project-links">
+                            <a href="https://anniew.xyz//">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/anniew.xyz">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <p class="project-description">
+                        It's this site you are currently visiting! This is my personal
+                        website, a developer and photographer portfolio.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/project-preview/music-player-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Simple Music Player
+                                </span>
+                        <div class="project-links">
+                            <a href="https://musicplayer.anniew.xyz/">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/anniedotexe/music-player">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <p class="project-description">
+                        This is a minimal and simple music player UI design. Users
+                        can click on buttons for changing color when they are active, such
+                        as liking the song, repeat, and
+                        shuffle.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/project-preview/optometrist-preview.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    An Optometry Practice Website's Redesign
+                                </span>
+                        <div class="project-links">
+                            <a href="https://optometrist.anniew.xyz/">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a
+                                    href="https://github.com/anniedotexe/optometrist-website-redesign">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                    <p class="project-description">
+                        This is a redesign of my optometrist's website to be responsive and
+                        have a modern minimalist
+                        design (and look less early 2000's).<br><br>
+                        <em>I am not associated with nor speak for this optometry
+                            practice.</em>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-
-
-<section class="py-5 back_area">
-    <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6 text-left">
-                <h3><b>Babson Analytics Hackathon</b></h3>
-                <hr class="title_line">
-                <p class="mb-2"><b>Objective:</b> By analyzing Wayfair's web traffic data, recommend how to effectively use sale banners on the Wayfair platform.</p>
-                <p class="mb-2"><b>Tech Tool:</b> Tableau</p>
-                <p><b>Highlights:</b>
-                <ul>
-                    <li>Undergraduate Team Winner</li>
-                    <li>Best <span style="color: red">analysis</span> rewarded by Wayfair</li>
-                    <li>Best <span style="color: red">visualization</span> awarded by Tableau</li>
-                </ul>
-                </p>
-            </div>
-            <div class="col-md-6 text-center pr-5">
-                <img width="80%" src="assets/projects/ZWayfair.png">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="py-5">
-    <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6 text-left pr-5">
-                <img width="90%" src="assets/projects/ZTwitter.png">
-            </div>
-            <div class="col-md-6 text-left">
-                <h3><b>Understanding Politics through Twitter</b></h3>
-                <hr class="title_line">
-                <p class="mb-2"><b>Objective:</b> Analyze how the 2016 presidential candidates were using Twitter and how the public reacted to their tweets to better understand politics.</p>
-                <p class="mb-2"><b>Tech Tool:</b> R Studio</p>
-                <p><b>Highlights:</b>
-                <ul>
-                    <li>Text Analysis</li>
-                    <li>Sentiment Analysis</li>
-                    <li>Time Series Analysis</li>
-                </ul>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 
 
 <footer class="py-3 bg-dark text-white-50">
