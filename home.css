@@ -11,15 +11,8 @@
     position:relative;
   }
 
-.addon {
-  height: 90vh;
-  min-height: 500px;
-  width: 101%;
-  overflow: hidden;
-  }
-
 .pm {
-  color:var(--banner_pink); 
+  color:black;
   font-family: 'Big Shoulders Stencil Text';
   letter-spacing: 1px;
   font-size: 35px;
@@ -30,8 +23,8 @@
     font-family: 'Nunito';
     font-weight: 800;
     border-width: 2px;
-    background-color: var(--banner_pink); 
-    border-color: var(--banner_pink); 
+    background-color: black;
+    border-color: black;
    }
   
   .btn-primary.custom-btn:hover {
@@ -122,77 +115,18 @@
   
   .work_title:hover {
     text-decoration: none;
-    color: #333
+    color: black;
   }
 
-  .youtube_video {
-    border-bottom: 3px solid var(--banner_green);
-    border-right: 3px solid var(--banner_green);
-    border-top: 3px solid var(--banner_pink);
-    border-left: 3px solid var(--banner_pink);
-  }
   
   .feature_name_green {
     font-family: 'Barrio', cursive;
     font-size: 32px;
-    color: var(--banner_green);
+    color: black;
   }
   
   .feature_name_pink {
     font-family: 'Barrio', cursive;
     font-size: 32px;
-    color: var(--banner_pink);
+    color: black;
   }
-  
-  .filter-button {
-      font-size: 18px;
-      border: 1px solid #db584e;
-      border-radius: 5px;
-      text-align: center;
-      color: #db584e;
-      margin-bottom: 30px;
-  
-  }
-  .filter-button:hover {
-      font-size: 18px;
-      border: 1px solid #db584e;
-      border-radius: 5px;
-      text-align: center;
-      color: #ffffff;
-      background-color: #db584e;
-  
-  }
-  .btn-default:active .filter-button:active {
-      background-color: #db584e;
-      color: white;
-  }
-  
-  .gallery_product img {
-    width: 100%;
-    margin: 10px 0;
-  }
-  
-  .more_about_me {
-    height: 60vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-.scroll_symbol {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 50px;
-  padding-bottom: 15px;
-  padding-right: 30px;
-  text-shadow: 0 0 3px rgb(212, 212, 212);
-}
-
-.scroll_symbol a {
-  text-decoration: none;
-  color: var(--banner_green);
-}
-
-.scroll_symbol a:hover{
-  opacity: 0.8;
-}

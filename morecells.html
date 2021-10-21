@@ -1,10 +1,212 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H9HJCJNWB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3H9HJCJNWB', {'page_title' : 'Other Cells'});
+    </script>
+    <title>Ji Zhang Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/188a1ecbd0.js" crossorigin="anonymous" async></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="main.js" async></script>
+    <script src="feature.js" async></script>
+    <link rel="stylesheet" type="text/css" href="featured.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/Uicon.png"/>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
+<script>
+    $(document).ready(function(){
+
+        //art Gallery filter
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+
+            if(value == "all") {
+                $('.filter').show('1000');}
+            else {
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');}
+        });
+
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+    });
+
+
+</script>
+
 <body>
+
+<!--Loading Page-->
+<div class="se-pre-con">
+    <div class="loader_image">
+        <img src="assets/Uicon.png">
+        <p>Loading ...</p>
+    </div>
+</div>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-sm sticky-top bg-custom">
+    <div class="container">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/Uicon.png" alt="logo" style="width:50px;">
+        </a>
+        <a class="navbar-brand jizhang" href="index.html" style="font-size: 24px; color: #000000;">Ji Zhang</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="artworks.html">Artistic Cells&nbsp;</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="codes.html">Coding Cells</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link active" href="morecells.html">Other Cells</a>
+                </li>
+                <span class="nav-indicator"></span>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- back to top button -->
+<button onclick="topFunction()" id="back_to_top" title="Go to top">Top</button>
+
+<!--other cells gallery-->
+<main class="main-container photos-section">
+    <section class="photos">
+        <div class="page-title">
+            <img src="assets/Umorecells.png" alt="Othercell Icon">
+            <h2 style="color:black">More About Me</h2>
+        </div>
+        <p class="section-description " style="color:black;font-size: 16px;
+    font-weight: 400;">
+            Photos that can represent me<br>
+        </p>
+        <p class="section-description" style="color:black;font-size: 16px;
+    font-weight: 400;">
+            <em>“I promise that you will never find another like ME.” – Taylor Swift (ME!)</em><br>
+        </p>
+        <div class="row justify-content-center" style="margin-top: 50px">
+            <button class="col-md-auto btn btn-default filter-button" data-filter="all">All</button><br>
+            <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="food">Foodie</button><br>
+            <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="cat">My Cat</button><br>
+            <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="travel">Traveller</button>
+        </div>
+        <div class="photo-grid-container">
+            <div class="photo-container filter food">
+                <img src="assets/morepic/bbq.png"
+                     class="lazy" alt="bbq" title="bbq">
+            </div>
+            <div class="photo-container filter food">
+                <img src="assets/morepic/brunch.png"
+                     class="lazy" alt="bread pic"
+                     title="brunch">
+            </div>
+            <div class="photo-container filter food">
+                <img src="assets/morepic/hotpot.png"
+                     class="lazy" alt="hotpot" title="Hotpot">
+            </div>
+            <div class="photo-container filter food">
+                <img src="assets/morepic/hotpot1.png"
+                     class="lazy" alt="hotpot" title="Hotpot">
+            </div>
+            <div class="photo-container filter food">
+                <img src="assets/morepic/hotpot2.png"
+                     class="lazy" alt="hotpot" title="Hotpot">
+            </div>
+            <div class="photo-container filter food">
+                <img src="assets/morepic/nood.png"
+                     class="lazy" alt="noodle"
+                     title="noodle">
+            </div>
+            <div class="photo-container filter food">
+                <img src="assets/morepic/pasta.png"
+                     class="lazy" alt="pasta" title="pasta">
+            </div>
+            <div class="photo-container filter food">
+                <img src="assets/morepic/pasta2.png"
+                     class="lazy" alt="pasta" title="pasta">
+            </div>
+            <div class="photo-container filter food">
+                <img src="assets/morepic/seafoodpasta.png"
+                     class="lazy"
+                     alt="seafood pasta"
+                     title="seafood pasta">
+            </div>
+            <div class="photo-container filter travel">
+                <img src="assets/morepic/statemap.png"
+                     class="lazy" alt="Statemap"
+                     title="States I have been">
+            </div>
+            <div class="photo-container filter travel">
+                <img src="assets/morepic/worldmap.png"
+                     class="lazy" alt="worldmap"
+                     title="places i have been around the world">
+            </div>
+            <div class="photo-container filter travel">
+                <img src="assets/morepic/chinamap.png"
+                     class="lazy" alt="chinamap"
+                     title="Places i have been in China">
+            </div>
+            <div class="photo-container filter cat">
+                <img src="assets/morepic/cat1.png"
+                     class="lazy" alt="cat"
+                     title="cat">
+            </div>
+            <div class="photo-container filter cat">
+                <img src="assets/morepic/cat2.png"
+                     class="lazy"
+                     alt="cat"
+                     title="cat">
+            </div>
+            <div class="photo-container filter cat">
+                <img src="assets/morepic/cat3.png"
+                     class="lazy" alt="cat" title="cat">
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+<footer class="py-3 bg-dark text-white-50">
+    <div class="container text-center">
+        <small>Copyright &copy; 2021 Ji Zhang All Right Reserved</small>
+    </div>
+</footer>
 
 </body>
 </html>

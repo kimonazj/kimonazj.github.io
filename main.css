@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: var(--hanbaiyu);
+    background-color: white;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     color: #666666;
@@ -31,7 +31,7 @@ section {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: var(--hanbaiyu);
+  background-color: white;
 }
 
 .se-pre-con .loader_image {
@@ -85,7 +85,7 @@ section {
 }
 
 .navbar {
-  background-color: var(--hanbaiyu);
+  background-color: white;
 	-webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 	-moz-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
@@ -94,7 +94,7 @@ section {
 }
 
 .navbar .navbar-nav .nav-link {
-  color: var(--banner_pink);
+  color: black;
   opacity: 70%;
   padding-top: 14px;
   padding-bottom: 13px;
@@ -104,13 +104,13 @@ section {
   background-position: left top, right bottom;
   background-size: 30px, 30px;
   background-repeat: no-repeat, no-repeat;
-  color: var(--banner_pink);
+  color: black;
   opacity: 100%;
 }
 
 .navbar .navbar-nav .nav-item .active {
   font-weight: bold;
-  color: var(--banner_pink);
+  color: black;
   opacity: 100%;
 }
 
@@ -119,18 +119,18 @@ section {
 }
 
 .fa-bars {
-  color: var(--banner_pink);
+  color: black;
   font-size: 120%;
 }
 
 .jizhang {
   font-family: 'Architects Daughter';
   font-size: calc(100% + 4vw + 4vh);
-  color: var(--molihuang);
+  color: black;
 }
 
 .my_work {
-  color:var(--banner_pink); 
+  color: black;
   font-family: 'Architects Daughter';
   letter-spacing: 1px;
   font-size: 50px;
@@ -138,7 +138,7 @@ section {
 }
 
 .my_feature {
-  color:var(--banner_green); 
+  color: black;
   font-family: 'Architects Daughter';
   letter-spacing: 1px;
   font-size: 50px;
@@ -155,7 +155,7 @@ section {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: var(--banner_pink);
+  background-color: black;
   color: white;
   cursor: pointer;
   padding: 15px;

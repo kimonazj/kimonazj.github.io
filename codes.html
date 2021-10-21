@@ -31,23 +31,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<style>
+<script>
+    $(document).ready(function(){
 
-    .data_slogan {
-        font-family: 'Kalam';
-        background-color: var(--banner_green);
-        color:rgb(251, 242, 227);
-        text-shadow: 1px 1px  rgb(114, 114, 114);
-    }
+        //Project language filter
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
 
-    .title_line {
-        background-color: var(--banner_green);
-        height: 3px;
-        margin-top: 2px;
-        margin-left: 0;
-    }
+            if(value == "all") {
+                $('.filter').show('1000');}
+            else {
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');}
+        });
 
-</style>
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+    });
+
+
+</script>
 
 <body>
 
@@ -103,32 +108,36 @@
     <section class="projects">
         <div class="page-title">
             <img src="assets/Ucodecell.png" alt="Codecell Icon">
-            <h2 style="color:black">My <span class="b-black">Coding Project</span></h2>
+            <h2 style="color:black">My Coding Project</h2>
         </div>
         <p class="section-description" style="color:black;font-size: 16px;
     font-weight: 400;">
             Here are the projects I have worked on.<br>
             Also take a look at my <a class="hyperlink"
-                                      href="https://github.com/kimonazj">GitHub</a> profile for more details.
+                                      href="https://github.com/kimonazj" style="color: mediumpurple">GitHub</a> profile for more details.
         </p>
         <p class="section-description" style="color:black;font-size: 16px;
     font-weight: 400;">
             <em>"Code is like humor. When you have to explain it, it's bad."</em><br>
         </p>
+        <div class="row justify-content-center" style="margin-top: 50px">
+            <button class="col-md-auto btn btn-default filter-button" data-filter="all">All</button><br>
+            <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="java">Java</button><br>
+            <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="py">Python</button><br>
+            <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="js">Javascript</button><br>
+            <button class="col-md-auto offset-md-1 btn btn-default filter-button" data-filter="other">Other</button>
+        </div>
         <div class="project-cards-container">
-            <div class="card">
-                <img src="./img/project-preview/subuwu-preview.png"
-                     alt="Project Preview Screenshot" class="card-preview-img">
+            <div class="card filter js">
+                <img src="assets/projects/PikaCourse_icon.png"
+                     alt="PikaCourse Icon" class="card-preview-img">
                 <div class="card-info">
                     <div class="title-and-links">
                                 <span class="project-title">
-                                    Subuwu
+                                    PikaCourse
                                 </span>
                         <div class="project-links">
-                            <a href="https://subuwu.anniew.xyz/">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/anniedotexe/subuwu">
+                            <a href="https://github.com/PikaCourse/homiehomie">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
@@ -136,86 +145,60 @@
                     <div class="project-skills">
                         <span>ReactJS</span>
                         <span>Redux</span>
-                        <span>Styled-Components</span>
+                        <span>CSS3</span>
+                        <span>HTML5</span>
                     </div>
                     <p class="project-description">
-                        This is a responsive Tesla website clone customized for Subuwu
-                        &#40;Subaru but its uwu&#41;.
+                        The Web Application provides an integrated networking
+                        platform for students to meet/connect/interact
+                        with students in the same classes or shared similar
+                        schedules/tracks, to share & discover information
+                        about classes, and to manage their schedules/todo.
                     </p>
                 </div>
             </div>
-            <div class="card">
-                <img src="./img/project-preview/comfy-coffee-preview.png"
+            <div class="card filter py">
+                <img src="assets/projects/baystatebanner.png"
                      alt="Project Preview Screenshot" class="card-preview-img">
                 <div class="card-info">
                     <div class="title-and-links">
                                 <span class="project-title">
-                                    Comfy Coffee
+                                    Boston Voting Pattern (Baystate Banner)
                                 </span>
                         <div class="project-links">
-                            <a href="https://comfy-coffee.anniew.xyz/">
+                            <a href="https://www.baystatebanner.com/2021/10/13/population-changes-upend-voting-patterns/">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
-                            <a href="https://github.com/anniedotexe/comfy-coffee">
+                            <a href="https://github.com/kimonazj/CS506Spring2021Repository">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-skills">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
+                        <span>Python3</span>
+                        <span>Numpy/Pandas</span>
+                        <span>Tableau</span>
                     </div>
                     <p class="project-description">
-                        This is the landing page for a fictitious coffee shop called "Comfy
-                        Coffee" based on Starbucks'
-                        website design.
+                        The project's goal is to help Baystate Banner and DOT NEWS to find
+                        Boston Voting Pattern on ward-precinct level.
+                        The project involves data analyzing, graphing and visualization.
                     </p>
                 </div>
             </div>
-            <div class="card">
-                <img src="./img/project-preview/twitcord-preview.png"
+            <div class="card filter js">
+                <img src="https://media.istockphoto.com/vectors/calendar-line-icon-editable-stroke-pixel-perfect-for-mobile-and-web-vector-id1172489050?b=1&k=20&m=1172489050&s=170667a&w=0&h=Kn4yASHVL4QTt_3dGgbPIipQo4XRW4OiY2PhpsxdqMI="
                      alt="Project Preview Screenshot" class="card-preview-img">
                 <div class="card-info">
                     <div class="title-and-links">
                                 <span class="project-title">
-                                    Twitcord
+                                    My Calendar
                                 </span>
                         <div class="project-links">
-                            <a href="https://twitcord.anniew.xyz/">
+                            <a href="https://drive.google.com/file/d/18QOW-Epj62f3uoSMjWHkooWhBuY13TMY/view">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
-                            <a href="https://github.com/anniedotexe/twitcord">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-skills">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <p class="project-description">
-                        A mobile UI concept of "If Twitter was owned by Discord." It was
-                        inspired by this <a
-                            href="https://www.reddit.com/r/discordapp/comments/lxjoe1/if_twitter_were_owned_by_discord/"
-                            class="hyperlink">concept art</a> on Reddit. You can
-                        change the nav tabs and toggle on the reaction buttons.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/project-preview/tic-tac-toe-preview.png"
-                     alt="Project Preview Screenshot" class="card-preview-img">
-                <div class="card-info">
-                    <div class="title-and-links">
-                                <span class="project-title">
-                                    Simple TIC-TAC-TOE Game
-                                </span>
-                        <div class="project-links">
-                            <a href="https://tic-tac-toe.anniew.xyz/">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/anniedotexe/tic-tac-toe">
+                            <a href="https://github.com/CS411-Calendar/App">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
@@ -226,234 +209,127 @@
                         <span>JavaScript</span>
                     </div>
                     <p class="project-description">
-                        This is a fully responsive simple tic-tac-toe game written in
-                        vanilla HTML, CSS, and JavaScript.
+                        The project aims to create a web scheduling application that can
+                        workout conflicts with groups,
+                        determining common meeting time, and send reminders
+                        as necessary about meetings.
                     </p>
                 </div>
             </div>
-            <div class="card">
-                <img src="./img/project-preview/ig-bot-preview.png"
+            <div class="card filter py">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20191111133858/How-Should-a-Machine-Learning-Beginner-Get-Started-on-Kaggle.png"
                      alt="Project Preview Screenshot" class="card-preview-img">
                 <div class="card-info">
                     <div class="title-and-links">
                                 <span class="project-title">
-                                    Instagram Like & Comment Bot
+                                    Kaggle Competition
                                 </span>
                         <div class="project-links">
-                            <a href="https://www.instagram.com/anniedotexe/">
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="https://github.com/CS506-Boston-University/kaggle-competition-kimonazj">
+                                <i class="fab fa-github"></i>
                             </a>
+                        </div>
+                    </div>
+                    <div class="project-skills">
+                        <span>Python</span>
+                        <span>Numpy/Pandas/Sklearn/Nltk</span>
+                    </div>
+                    <p class="project-description">
+                        The goal of this competition is to predict the star rating associated
+                        with user reviews from Amazon Movie Reviews using the available features.
+                    </p>
+                </div>
+            </div>
+            <div class="card filter java">
+                <img src="assets/projects/album.png"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Find My Music (Android)
+                                </span>
+                        <div class="project-links">
                             <a
-                                    href="https://github.com/anniedotexe/Instagram-Like-Comment-Bot">
+                                    href="https://github.com/kimonazj/CS501">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-skills">
-                        <span>Python</span>
-                        <span>Selenium</span>
+                        <span>Java</span>
+                        <span>Android_Studio</span>
                     </div>
                     <p class="project-description">
-                        An Instagram bot script written in Python using <a class="hyperlink"
-                                                                           href="https://selenium-python.readthedocs.io/">Selenium</a> on
-                        Google Chrome. It will go through posts in hashtag(s) and like
-                        and/or comment on them.
+                        The app allow users to take photos of front covers of music albums
+                        and then the app passes relevant data to Spotify to see if there are
+                        songs on Spotify for the user to sample.
+                        The app can display search/listen history and recommend
+                        songs based on user history.
                     </p>
                 </div>
             </div>
-            <div class="card">
-                <img src="./img/project-preview/twitter-bot-preview.png"
+            <div class="card filter other">
+                <img src="assets/projects/covidsim.png"
                      alt="Project Preview Screenshot" class="card-preview-img">
                 <div class="card-info">
                     <div class="title-and-links">
                                 <span class="project-title">
-                                    Twitter Like & Retweet Bot
+                                    Simulating Covid-19
                                 </span>
                         <div class="project-links">
-                            <a href="https://twitter.com/ac_celeste_bot">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/anniedotexe/Twitter-Retweet-Bot">
+                            <a href="https://github.com/vibss2397/Covid-sim">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-skills">
-                        <span>Python</span>
-                        <span>AWS EC2</span>
-                    </div>
-                    <p class="project-description">
-                        A Twitter bot written in Python using <a class="hyperlink"
-                                                                 href="https://docs.tweepy.org/en/stable/getting_started.html">Tweepy</a>.
-                        It will like and/or retweet tweets that contain single or multiple
-                        keywords and hashtags.<br><br>
-                        My version of this Twitter bot likes and retweets anything
-                        containing the words "Animal Crossing Celeste".<em>
-                        I did not realize that there is also a game called Celeste, so
-                        the bot also retweets any tweets talking about both of these
-                        games and tweets about Animal Crossing from Twitter usernames
-                        with Celeste in it. </em> It was originally deployed on an
-                        Amazon Web Services EC2 instance. However, the free trial period
-                        ended, so it is now hosted for free on <a class="hyperlink"
-                                                                  href="https://www.pythonanywhere.com/">PythonAnywhere</a>.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/project-preview/rnn-twitter-bot-preview.png"
-                     alt="Project Preview Screenshot" class="card-preview-img">
-                <div class="card-info">
-                    <div class="title-and-links">
-                                <span class="project-title">
-                                    RNN Twitter Bot
-                                </span>
-                        <div class="project-links">
-                            <a href="https://twitter.com/dickinson_rnn">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/anniedotexe/RNN-Twitter-Bot">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-skills">
-                        <span>Python</span>
-                        <span>GCP VM</span>
-                    </div>
-                    <p class="project-description">
-                        This is a recurrent neural network Twitter bot written in Python
-                        with Tweepy. It will tweet newly generated text from the trained
-                        model every hour to a Twitter account<br><br>
-                        My version of this Twitter bot was trained to generate text with
-                        Emily Dickinson
-                        poems. It was originally deployed on a Google
-                        Cloud Platform virtual machine
-                        instance. However, the free
-                        trial period ended, so it is now scheduled to run locally on PC
-                        startup.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/project-preview/amazon2-preview.png"
-                     alt="Project Preview Screenshot" class="card-preview-img">
-                <div class="card-info">
-                    <div class="title-and-links">
-                                <span class="project-title">
-                                    Amazon 2.0
-                                </span>
-                        <div class="project-links">
-                            <a href="https://clone-2-2ee81.firebaseapp.com">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/anniedotexe/amazon-2">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-skills">
-                        <span>HTML5</span>
-                        <span>Tailwind CSS</span>
+                        <span>C++</span>
                         <span>JavaScript</span>
-                        <span>Firebase</span>
-                        <span>Firestore Database</span>
+                        <span>HTML</span>
                     </div>
                     <p class="project-description">
-                        A redesigned Amazon clone inspired by this <a class="hyperlink"
-                                                                      href="https://dribbble.com/shots/15350650-Amazon-Website-Redesign-Concept">concept
-                        design</a> on Dribbble. You can add items to cart, delete items
-                        from the cart, and increase or decrease the quantity of an item in
-                        the cart.
+                        Simulating Covid-19 using parallel programming.
                     </p>
                 </div>
             </div>
-            <div class="card">
-                <img src="./img/project-preview/anniewxyz-preview.png"
+            <div class="card filter other">
+                <img src="https://repository-images.githubusercontent.com/6786166/88c78500-1ad7-11eb-850f-1f6a1a012d47"
                      alt="Project Preview Screenshot" class="card-preview-img">
                 <div class="card-info">
                     <div class="title-and-links">
                                 <span class="project-title">
-                                    anniew.xyz
+                                    OCaml Interpreter
+                                </span>
+                    </div>
+                    <div class="project-skills">
+                        <span>Ocaml</span>
+                    </div>
+                    <p class="project-description">
+                        The project aims to understand and build an interpreter for a small,
+                        OCaml-like, stack-based bytecode language. The interpreter is implemented in OCaml.
+                    </p>
+                </div>
+            </div>
+            <div class="card filter java">
+                <img src="https://www.project-disco.org/wp-content/uploads/2018/04/Android-logo.jpg"
+                     alt="Project Preview Screenshot" class="card-preview-img">
+                <div class="card-info">
+                    <div class="title-and-links">
+                                <span class="project-title">
+                                    Simple Android Apps
                                 </span>
                         <div class="project-links">
-                            <a href="https://anniew.xyz//">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/anniedotexe/anniew.xyz">
+                            <a href="https://github.com/kimonazj/android-app">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-skills">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>Android Studio</span>
                     </div>
                     <p class="project-description">
-                        It's this site you are currently visiting! This is my personal
-                        website, a developer and photographer portfolio.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./img/project-preview/music-player-preview.png"
-                     alt="Project Preview Screenshot" class="card-preview-img">
-                <div class="card-info">
-                    <div class="title-and-links">
-                                <span class="project-title">
-                                    Simple Music Player
-                                </span>
-                        <div class="project-links">
-                            <a href="https://musicplayer.anniew.xyz/">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/anniedotexe/music-player">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-skills">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <p class="project-description">
-                        This is a minimal and simple music player UI design. Users
-                        can click on buttons for changing color when they are active, such
-                        as liking the song, repeat, and
-                        shuffle.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./img/project-preview/optometrist-preview.png"
-                     alt="Project Preview Screenshot" class="card-preview-img">
-                <div class="card-info">
-                    <div class="title-and-links">
-                                <span class="project-title">
-                                    An Optometry Practice Website's Redesign
-                                </span>
-                        <div class="project-links">
-                            <a href="https://optometrist.anniew.xyz/">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a
-                                    href="https://github.com/anniedotexe/optometrist-website-redesign">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-skills">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                    </div>
-                    <p class="project-description">
-                        This is a redesign of my optometrist's website to be responsive and
-                        have a modern minimalist
-                        design (and look less early 2000's).<br><br>
-                        <em>I am not associated with nor speak for this optometry
-                            practice.</em>
+                        Simple Android Apps.
                     </p>
                 </div>
             </div>
@@ -464,7 +340,7 @@
 
 <footer class="py-3 bg-dark text-white-50">
     <div class="container text-center">
-        <small>Copyright &copy; 2020 Jiashu Zhang All Right Reserved</small>
+        <small>Copyright &copy; 2021 Ji Zhang All Right Reserved</small>
     </div>
 </footer>
 
