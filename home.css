@@ -1,16 +1,14 @@
 @import url("main.css");
-
-.masthead {
-    height: 140vh;
-    min-height: 300px;
-    background-image: url('assets/Ubackground.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position:relative;
-  }
-
+.img-break{
+  height: 100%;
+  width: 20%;
+}
+.img-bdiv{
+  height: 10vh;
+}
+.self-intro{
+  background-color: #FCFCFC;
+}
 .pm {
   color:black;
   font-family: 'Big Shoulders Stencil Text';
@@ -83,12 +81,13 @@
     overflow: hidden; 
   }
   
-  .work_girl_img {
+  .work_cell_img {
     transition: 0.3s;
-    width: 80%;
+    width: 100%;
+    height: 100%
   }
   
-  .work_img_wrapper:hover .work_girl_img{
+  .work_img_wrapper:hover .work_cell_img{
     transform: scale(1.1);
     opacity: 0.3;
   }
